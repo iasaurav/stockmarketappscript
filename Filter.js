@@ -3,6 +3,9 @@
 
 ZERODHA.pasteFormulaniftt();
 ZERODHA.pasteFormulabniftt();
+ZERODHA.pasteFormulafniftt();
+ZERODHA.pasteFormulacriftt()
+
 
 
 function pasteFormula() {
