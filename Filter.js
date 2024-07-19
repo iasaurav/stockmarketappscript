@@ -1,6 +1,3 @@
-
-
-
 ZERODHA.pasteFormulaniftt();
 ZERODHA.pasteFormulabniftt();
 ZERODHA.pasteFormulafniftt();
