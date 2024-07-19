@@ -4,7 +4,9 @@
 ZERODHA.pasteFormulaniftt();
 ZERODHA.pasteFormulabniftt();
 ZERODHA.pasteFormulafniftt();
-ZERODHA.pasteFormulacriftt()
+ZERODHA.pasteFormulacriftt();
+ZERODHA.pasteFormulaseniftt();
+ZERODHA.pasteFormulabeniftt();
 
 
 
@@ -12,6 +14,13 @@ function pasteFormula() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
   var formula = '=YOUR_FORMULA_HERE';
   sheet.getRange('A1').setFormula(formula);
+}
+
+
+function pasteFormulaniftt() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
+  var formula = '=FILTER(A1:F,C1:C="NIFTY",E1:E>AE1-100,E1:E<AE1+300,D1:D=AD1)';
+  sheet.getRange('AG1').setFormula(formula);
 }
 
 
@@ -31,8 +40,26 @@ function pasteFormulafniftt() {
 
 
 
+
+
+
+
+function pasteFormulaseniftt() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
+  var formula = '=FILTER(A1:F,C1:C="SENSEX",E1:E>AE5-100,E1:E<AE5+300,D1:D=AD5)';
+  sheet.getRange('BC1').setFormula(formula);
+}
+
+function pasteFormulabeniftt() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
+  var formula = '=FILTER(A1:F,C1:C="BANKEX",E1:E>AE6-100,E1:E<AE6+700,D1:D=AD6)';
+  sheet.getRange('BJ1').setFormula(formula);
+}
+
+
+
 function pasteFormulacriftt() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
   var formula = '=FILTER(A1:F,C1:C="CRUDEOIL",E1:E>AE4-100,E1:E<AE4+300,D1:D=AD4)';
-  sheet.getRange('BC1').setFormula(formula);
+  sheet.getRange('BQ1').setFormula(formula);
 }
