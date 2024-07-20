@@ -60,3 +60,13 @@ function pasteFormulacriftt() {
   var formula = '=FILTER(A1:F,C1:C="CRUDEOIL",E1:E>AE4-100,E1:E<AE4+300,D1:D=AD4)';
   sheet.getRange('BQ1').setFormula(formula);
 }
+
+
+
+
+<a href='https://tv.upstox.com/charts/NSE_FO%7C65335'target='_blank'>NIFTY 25JUL24 24350 CE</a>
+function upstox(h,i,j,k) {
+  let tradingview='https://tv.upstox.com/charts/NSE_FO|';
+let a="<a href='"+tradingvie+h+"?isPopup=true'target='_blank'>"+i+j+k+"</a>"
+  return a;
+  }
