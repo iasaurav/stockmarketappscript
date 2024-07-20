@@ -4,8 +4,12 @@ ZERODHA.pasteFormulafniftt();
 ZERODHA.pasteFormulacriftt();
 ZERODHA.pasteFormulaseniftt();
 ZERODHA.pasteFormulabeniftt();
-
-
+ZERODHA.pasteFormulaa();
+ZERODHA.pasteFormulab();
+ZERODHA.pasteFormulac();
+ZERODHA.pasteFormulad();
+ZERODHA.pasteFormulae();
+ZERODHA.pasteFormulaf();
 
 function pasteFormula() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
@@ -85,3 +89,51 @@ let formattedDate = j.toLocaleDateString('en-GB', { day: '2-digit', month: 'shor
 let a="<a href='"+tradingview+h+":"+i+" "+formattedDate+" "+k+" "+l+"'target='_blank'>"+i+" "+formattedDate+" "+k+" "+l+"</a>"
   return a;
   }
+
+
+
+
+
+
+
+//custom//
+function pasteFormulaa() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
+  var formula = '=query(Sheet2!AG1:AM20)';
+  sheet.getRange('A1').setFormula(formula);
+}
+
+function pasteFormulab() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
+  var formula = '=query(Sheet2!AN1:AS20)';
+  sheet.getRange('A21').setFormula(formula);
+}
+
+function pasteFormulac() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
+  var formula = '=query(Sheet2!AV1:AZ20)';
+  sheet.getRange('A41').setFormula(formula);
+}
+
+
+function pasteFormulad() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
+  var formula = '=query(Sheet2!BC1:BH20)';
+  sheet.getRange('A61').setFormula(formula);
+}
+
+
+function pasteFormulae() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
+  var formula = '=query(Sheet2!BJ1:BO20)';
+  sheet.getRange('A81').setFormula(formula);
+}
+
+
+
+function pasteFormulaf() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
+  var formula = '=query(Sheet2!BQ1:BV20)';
+  sheet.getRange('A101').setFormula(formula);
+}
+
