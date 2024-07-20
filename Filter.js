@@ -98,7 +98,7 @@ let a="<a href='"+tradingview+h+":"+i+" "+formattedDate+" "+k+" "+l+"'target='_b
 //custom//
 function pasteFormulaa() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=query(Sheet2!AG1:AM20)';
+  var formula = '=query(Sheet2!AG1:AL20)';
   sheet.getRange('A1').setFormula(formula);
 }
 
@@ -137,7 +137,7 @@ function pasteFormulaf() {
 }
 
 
-                //
+                ////
 
 function fillFormulaInColumn() {
   // Get the active spreadsheet
@@ -150,5 +150,10 @@ function fillFormulaInColumn() {
   var range = sheet.getRange('G1:G60');
   range.setFormula(formula);
 }
+
+
+
+
+
 
 
