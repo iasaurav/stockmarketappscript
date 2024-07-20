@@ -66,7 +66,9 @@ function pasteFormulacriftt() {
 
 <a href='https://tv.upstox.com/charts/NSE_FO%7C65335'target='_blank'>NIFTY 25JUL24 24350 CE</a>
 function upstox(h,i,j,k) {
+const options = { year: 'numeric', month: 'short', day: '2-digit' };
+const formattedDate = j.toLocaleDateString('en-GB', options).replace(/ /g, ' ');
   let tradingview='https://tv.upstox.com/charts/NSE_FO|';
-let a="<a href='"+tradingvie+h+"?isPopup=true'target='_blank'>"+i+j+k+"</a>"
+let a="<a href='"+tradingvie+h+"?isPopup=true'target='_blank'>"+i+formattedDate+k+"</a>"
   return a;
   }
