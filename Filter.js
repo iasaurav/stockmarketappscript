@@ -110,7 +110,7 @@ function pasteFormulab() {
 
 function pasteFormulac() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=query(Sheet2!AV1:AZ20)';
+  var formula = '=query(Sheet2!AU1:AZ20)';
   sheet.getRange('A41').setFormula(formula);
 }
 
