@@ -71,3 +71,17 @@ let formattedDate = j.toLocaleDateString('en-GB', { day: '2-digit', month: 'shor
 let a="<a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+i+" "+formattedDate+" "+k+l+"</a>"
   return a;
   }
+
+
+<a href='https://tv.dhan.co/?symbol=NSED65335:NIFTY 25 JUL 24350 CALL'target='_blank'>NIFTY 25 JUL 24350 CALL</a>
+function dhan(h,i,j,k,l) {
+    if (l === "CE") {
+    l = "CALL";
+} else if (l === "PE") {
+    l = "PUT";
+}
+let formattedDate = j.toLocaleDateString('en-GB', { day: '2-digit', month: 'short'}).replace(/ /g, '').toUpperCase();
+  let tradingview='https://tv.dhan.co/?symbol=NSED';
+let a="<a href='"+tradingview+h+":"+i+formattedDate+k+l+"'target='_blank'>"+i+" "+formattedDate+" "+k+l+"</a>"
+  return a;
+  }
