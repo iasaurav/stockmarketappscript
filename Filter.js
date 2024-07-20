@@ -68,7 +68,7 @@ function pasteFormulacriftt() {
 
 
 
-<a href='https://tv.upstox.com/charts/NSE_FO%7C65335'target='_blank'>NIFTY 25JUL24 24350 CE</a>
+
 function upstox(h,i,j,k,l) {
 let formattedDate = j.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: '2-digit' }).replace(/ /g, '').toUpperCase();
   let tradingview='https://tv.upstox.com/charts/NSE_FO|';
@@ -77,7 +77,6 @@ let a="<a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+i+" "+formatted
   }
 
 
-<a href='https://tv.dhan.co/?symbol=NSED65335:NIFTY 25 JUL 24350 CALL'target='_blank'>NIFTY 25 JUL 24350 CALL</a>
 function dhan(h,i,j,k,l) {
     if (l === "CE") {
     l = "CALL";
