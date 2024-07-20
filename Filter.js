@@ -82,6 +82,6 @@ function dhan(h,i,j,k,l) {
 }
 let formattedDate = j.toLocaleDateString('en-GB', { day: '2-digit', month: 'short'}).replace(/ /g, '').toUpperCase();
   let tradingview='https://tv.dhan.co/?symbol=NSED';
-let a="<a href='"+tradingview+h+":"+i+formattedDate+k+l+"'target='_blank'>"+i+" "+formattedDate+" "+k+l+"</a>"
+let a="<a href='"+tradingview+h+":"+i+" "+formattedDate+" "+k+" "+l+"'target='_blank'>"+i+" "+formattedDate+" "+k+" "+l+"</a>"
   return a;
   }
