@@ -42,7 +42,7 @@ function tradingviews(h,i,j,k) {
     j = "P";
 }
 const formattedDate = i.toISOString().slice(2, 10).replace(/-/g, '');
-let a= h+formattedDate+j+k
+let a= h+formattedDate+j+k+","
   return a;
   }
 
