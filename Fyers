@@ -49,13 +49,42 @@ let a= h+formattedDate+j+k
 
 
 
-function tradingviewsl(h,i,j,k) {
+function tradingviewsl(h,l,i,j,k) {
     if (j === "CE") {
     j = "C";
 } else if (j === "PE") {
     j = "P";
 }
+if (h === "NIFTY") {
+    h = "NSE-";
+} 
+  
+else if (h === "BANKNIFTY") {
+    h = "NSE-";
+} 
+  
+else if (h === "FINNIFTY") {
+    h = "NSE-";
+} 
+
+else if (h === "SENSEX") {
+    h = "BSE-";
+}
+
+  else if (h === "BANKEX") {
+    h = "BSE-";
+}
+  
+else if (h === "CRUDEOIL") {
+    h = "MCX-";
+}
+
+
+
 const formattedDate = i.toISOString().slice(2, 10).replace(/-/g, '');
-let a= "<a href='"+h+formattedDate+j+k+"'>"+h+formattedDate+j+k+"</a>
+let a= "<a href='https://in.tradingview.com/symbols/"+h+l+formattedDate+j+k+"'>"+l+formattedDate+j+k+"</a>
   return a;
   }
+
+
+
