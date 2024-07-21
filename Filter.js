@@ -198,7 +198,7 @@ function fillFormulaInColumn() {
   var formula = '=if(A1="","",DHAN(A1,C1,D1,E1,F1))';  // Replace with your actual formula
 
   // Fill the range G1:G60 with the formula
-  var range = sheet.getRange('G1:G60');
+  var range = sheet.getRange('G1:G200');
   range.setFormula(formula);
 }
 
