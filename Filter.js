@@ -157,33 +157,33 @@ let a="<a href='"+tradingview+i+h+":"+m+formattedDate+" "+k+" "+l+"'target='_bla
 //custom//
 function pasteFormulaa() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=query(Sheet2!AG1:AL20)';
+  var formula = '=sort(query(Sheet2!AG1:AL20))';
   sheet.getRange('A1').setFormula(formula);
 }
 
 function pasteFormulab() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=query(Sheet2!AN1:AS20)';
+  var formula = '=sort(query(Sheet2!AN1:AS20))';
   sheet.getRange('A21').setFormula(formula);
 }
 
 function pasteFormulac() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=query(Sheet2!AU1:AZ20)';
+  var formula = '=sort(query(Sheet2!AU1:AZ20))';
   sheet.getRange('A41').setFormula(formula);
 }
 
 
 function pasteFormulad() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=query(Sheet2!BC1:BH20)';
+  var formula = '=sort(query(Sheet2!BC1:BH20))';
   sheet.getRange('A61').setFormula(formula);
 }
 
 
 function pasteFormulae() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=query(Sheet2!BJ1:BO20)';
+  var formula = '=sort(query(Sheet2!BJ1:BO20))';
   sheet.getRange('A81').setFormula(formula);
 }
 
@@ -191,7 +191,7 @@ function pasteFormulae() {
 
 function pasteFormulaf() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=query(Sheet2!BQ1:BV20)';
+  var formula = '=sort(query(Sheet2!BQ1:BV20))';
   sheet.getRange('A101').setFormula(formula);
 }
 
