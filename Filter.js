@@ -69,15 +69,38 @@ function pasteFormulacriftt() {
 
 
 
-function upstox(h,i,j,k,l) {
+function upstox(h,i,j,k,l,m) {
+if (i === "NIFTY") {
+    i = "NSE_FO|";
+} 
+  
+else if (i === "BANKNIFTY") {
+    i = "NSE_FO|";
+} 
+  
+else if (i === "FINNIFTY") {
+    i = "NSE_FO|";
+} 
+
+else if (i === "SENSEX") {
+    i = "BSE_FO|";
+}
+
+  else if (i === "BANKEX") {
+    i = "BSE_FO|";
+}
+  
+else if (i === "CRUDEOIL") {
+    i = "MCX_FO|";
+}
 let formattedDate = j.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: '2-digit' }).replace(/ /g, '').toUpperCase();
-  let tradingview='https://tv.upstox.com/charts/NSE_FO|';
-let a="<a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+i+" "+formattedDate+" "+k+l+"</a>"
+  let tradingview='https://tv.upstox.com/charts/';
+let a="<a href='"+tradingview+i+h+"?isPopup=true'target='_blank'>"+m+" "+formattedDate+" "+k+l+"</a>"
   return a;
   }
 
 
-function dhan(h,i,j,k,l) {
+function dhan(h,i,j,k,l,m) {
     if (l === "CE") {
     l = "CALL";
 } else if (l === "PE") {
@@ -103,12 +126,15 @@ else if (i === "SENSEX") {
   else if (i === "BANKEX") {
     i = "BSED";
 }
-
+  
+else if (i === "CRUDEOIL") {
+    i = "MCXM";
+}
 
   
 let formattedDate = j.toLocaleDateString('en-GB', { day: '2-digit', month: 'short'}).replace(/ /g, '').toUpperCase();
   let tradingview='https://tv.dhan.co/?symbol=';
-let a="<a href='"+tradingview+h+":"+i+" "+formattedDate+" "+k+" "+l+"'target='_blank'>"+i+" "+formattedDate+" "+k+" "+l+"</a>"
+let a="<a href='"+tradingview+i+h+":"+m+formattedDate+" "+k+" "+l+"'target='_blank'>"+m+" "+formattedDate+" "+k+" "+l+"</a>"
   return a;
   }
 
