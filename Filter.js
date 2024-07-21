@@ -1,4 +1,4 @@
-function fillFormulaInColumn() {
+function fillFormulaInColumnupstox() {
   // Get the active spreadsheet
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
 
@@ -11,7 +11,7 @@ function fillFormulaInColumn() {
 }
 
 
-function fillFormulaInColumn() {
+function fillFormulaInColumndhan() {
   // Get the active spreadsheet
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
 
