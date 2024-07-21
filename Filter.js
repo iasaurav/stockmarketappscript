@@ -83,11 +83,36 @@ function dhan(h,i,j,k,l) {
 } else if (l === "PE") {
     l = "PUT";
 }
+
+if (i === "NIFTY") {
+    i = "NSED";
+} 
+  
+else if (i === "BANKNIFTY") {
+    i = "NSED";
+} 
+  
+else if (i === "FINNIFTY") {
+    i = "NSED";
+} 
+
+else if (i === "SENSEX") {
+    i = "BSED";
+}
+
+  else if (i === "BANKEX") {
+    i = "BSED";
+}
+
+
+  
 let formattedDate = j.toLocaleDateString('en-GB', { day: '2-digit', month: 'short'}).replace(/ /g, '').toUpperCase();
-  let tradingview='https://tv.dhan.co/?symbol=NSED';
+  let tradingview='https://tv.dhan.co/?symbol=';
 let a="<a href='"+tradingview+h+":"+i+" "+formattedDate+" "+k+" "+l+"'target='_blank'>"+i+" "+formattedDate+" "+k+" "+l+"</a>"
   return a;
   }
+
+
 
 
 
