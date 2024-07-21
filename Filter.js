@@ -1,3 +1,15 @@
+function fillFormulaInColumn() {
+  // Get the active spreadsheet
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
+
+  // Define the formula you want to apply
+  var formula = '=if(A1="","",DHAN(A1,C1,D1,E1,F1,C1))';  // Replace with your actual formula
+
+  // Fill the range G1:G60 with the formula
+  var range = sheet.getRange('L1:L');
+  range.setFormula(formula);
+}
+
 
 
 
