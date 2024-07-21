@@ -1,0 +1,32 @@
+function fyers(i,h) {
+    
+if (i === "NIFTY") {
+    i = "NSE:";
+} 
+  
+else if (i === "BANKNIFTY") {
+    i = "NSE:";
+} 
+  
+else if (i === "FINNIFTY") {
+    i = "NSE:";
+} 
+
+else if (i === "SENSEX") {
+    i = "BSE:";
+}
+
+  else if (i === "BANKEX") {
+    i = "BSE:";
+}
+  
+else if (i === "CRUDEOIL") {
+    i = "MCX:";
+}
+
+  
+
+  let tradingview='https://tv.dhan.co/?symbol=';
+let a=i+h
+  return a;
+  }
