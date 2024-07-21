@@ -1,3 +1,6 @@
+
+
+
 function fyers(i,h) {
     
 if (i === "NIFTY") {
@@ -32,13 +35,27 @@ let a=i+h+","
 
 
 
-function tradingviews(h,i,j) {
+function tradingviews(h,i,j,k) {
     if (j === "CE") {
     j = "C";
 } else if (j === "PE") {
     j = "P";
 }
 const formattedDate = i.toISOString().slice(2, 10).replace(/-/g, '');
-let a= h+formattedDate+j
+let a= h+formattedDate+j+k
+  return a;
+  }
+
+
+
+
+function tradingviewsl(h,i,j,k) {
+    if (j === "CE") {
+    j = "C";
+} else if (j === "PE") {
+    j = "P";
+}
+const formattedDate = i.toISOString().slice(2, 10).replace(/-/g, '');
+let a= "<a href='"+h+formattedDate+j+k+"'>"+h+formattedDate+j+k+"</a>
   return a;
   }
