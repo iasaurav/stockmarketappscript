@@ -24,9 +24,21 @@ else if (i === "CRUDEOIL") {
     i = "MCX:";
 }
 
-  
+ 
+let a=i+h+","
+  return a;
+  }
 
-  let tradingview='https://tv.dhan.co/?symbol=';
-let a=i+h
+
+
+
+function tradingviews(h,i,j) {
+    if (j === "CE") {
+    j = "C";
+} else if (j === "PE") {
+    j = "P";
+}
+const formattedDate = i.toISOString().slice(2, 10).replace(/-/g, '');
+let a= h+formattedDate+j
   return a;
   }
