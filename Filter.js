@@ -1,21 +1,4 @@
-ZERODHA.pasteFormulaniftt();
-ZERODHA.pasteFormulabniftt();
-ZERODHA.pasteFormulafniftt();
-ZERODHA.pasteFormulacriftt();
-ZERODHA.pasteFormulaseniftt();
-ZERODHA.pasteFormulabeniftt();
-ZERODHA.pasteFormulaa();
-ZERODHA.pasteFormulab();
-ZERODHA.pasteFormulac();
-ZERODHA.pasteFormulad();
-ZERODHA.pasteFormulae();
-ZERODHA.pasteFormulaf();
 
-function pasteFormula() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
-  var formula = '=YOUR_FORMULA_HERE';
-  sheet.getRange('A1').setFormula(formula);
-}
 
 
 function pasteFormulaniftt() {
