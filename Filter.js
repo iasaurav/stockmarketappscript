@@ -291,45 +291,52 @@ let a= "<a href='https://in.tradingview.com/symbols/"+h+l+formattedDate+j+k+"'>"
 
 //48888//
 
+ZERODHA.tvnifty();
+ZERODHA.tvniftyi();
+ZERODHA.tvniftybank();
+ZERODHA.tvniftybanki();
+ZERODHA.tvfinnifty();
+ZERODHA.tvfinnifty();
 
-function pasteFormulafnifttnifty() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
+
+function tvnifty() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
   var formula = '=Query(FILTER(A1:I,C1:C="NIFTY",F1:F="CE"),"Select Col9")';
   sheet.getRange('BT1').setFormula(formula);
 }
 
 
-function pasteFormulafnifttniftyn() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
+function tvniftyi() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
   var formula = '=Query(Sort(FILTER(A1:I,C1:C="NIFTY",F1:F="PE"),5,"false"),"Select Col9")';
   sheet.getRange('BU1').setFormula(formula);
 }
 
 
-function pasteFormulafnifttbankin() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
+function tvniftybank() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
   var formula = '=Query(FILTER(A1:I,C1:C="BANKNIFTY",F1:F="CE"),"Select Col9")';
   sheet.getRange('BV1').setFormula(formula);
 }
 
 
-function pasteFormulafnifttbanki() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
+function tvniftybanki() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
   var formula = '=Query(Sort(FILTER(A1:I,C1:C="BANKNIFTY",F1:F="PE"),5,"false"),"Select Col9")';
   sheet.getRange('BW1').setFormula(formula);
 }
 
 
 
-function pasteFormulafnifttfin() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
+function tvfinnifty() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
   var formula = '=Query(FILTER(A1:I,C1:C="FINNIFTY",F1:F="CE"),"Select Col9")';
   sheet.getRange('BX1').setFormula(formula);
 }
 
 
-function pasteFormulafnifttfini() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
+function tvfinniftyi() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
   var formula = '=Query(Sort(FILTER(A1:I,C1:C="FINNIFTY",F1:F="PE"),5,"false"),"Select Col9")';
   sheet.getRange('BY1').setFormula(formula);
 }
