@@ -3,27 +3,12 @@ sheet3h1:h=if(A1="","",DHAN(A1,C1,D1,E1,F1,C1))
 sheet2AG1=FILTER(A1:F,C1:C="NIFTY",E1:E>AE1-100,E1:E<AE1+300,D1:D=AD1)
 sheet2AN1=FILTER(A1:F,C1:C="BANKNIFTY",E1:E>AE2-300,E1:E<AE2+600,D1:D=AD2)
 sheet2Au1=FILTER(A1:F,C1:C="FINNIFTY",E1:E>AE3-100,E1:E<AE3+300,D1:D=AD3)
-  
-
-function pasteFormulaseniftt() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
-  var formula = '=FILTER(A1:F,C1:C="SENSEX",E1:E>AE5-100,E1:E<AE5+300,D1:D=AD5)';
-  sheet.getRange('BC1').setFormula(formula);
-}
-
-function pasteFormulabeniftt() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
-  var formula = '=FILTER(A1:F,C1:C="BANKEX",E1:E>AE6-100,E1:E<AE6+700,D1:D=AD6)';
-  sheet.getRange('BJ1').setFormula(formula);
-}
+sheet2Bc1=FILTER(A1:F,C1:C="SENSEX",E1:E>AE5-100,E1:E<AE5+300,D1:D=AD5)
+sheet2BJ1=FILTER(A1:F,C1:C="BANKEX",E1:E>AE6-100,E1:E<AE6+700,D1:D=AD6)
+sheet2BQ1=FILTER(A1:F,C1:C="CRUDEOIL",E1:E>AE4-100,E1:E<AE4+300,D1:D=AD4)
 
 
 
-function pasteFormulacriftt() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet2');
-  var formula = '=FILTER(A1:F,C1:C="CRUDEOIL",E1:E>AE4-100,E1:E<AE4+300,D1:D=AD4)';
-  sheet.getRange('BQ1').setFormula(formula);
-}
 
 
 
@@ -107,46 +92,13 @@ let a="<a href='"+tradingview+i+h+":"+m+formattedDate+" "+k+" "+l+"'target='_bla
 
 
 //custom//
-function pasteFormulaa() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=sort(query(Sheet2!AG1:AL20))';
-  sheet.getRange('A1').setFormula(formula);
-}
 
-function pasteFormulab() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=sort(query(Sheet2!AN1:AS20))';
-  sheet.getRange('A21').setFormula(formula);
-}
-
-function pasteFormulac() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=sort(query(Sheet2!AU1:AZ20))';
-  sheet.getRange('A41').setFormula(formula);
-}
-
-
-function pasteFormulad() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=sort(query(Sheet2!BC1:BH20))';
-  sheet.getRange('A61').setFormula(formula);
-}
-
-
-function pasteFormulae() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=sort(query(Sheet2!BJ1:BO20))';
-  sheet.getRange('A81').setFormula(formula);
-}
-
-
-
-function pasteFormulaf() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('sheet3');
-  var formula = '=sort(query(Sheet2!BQ1:BV20))';
-  sheet.getRange('A101').setFormula(formula);
-}
-
+sheet3a1=sort(query(Sheet2!AG1:AL20))
+sheet3a21=sort(query(Sheet2!AN1:AS20))
+a41=sort(query(Sheet2!AU1:AZ20))
+a61=sort(query(Sheet2!BC1:BH20))
+a81=sort(query(Sheet2!BJ1:BO20))
+a101=sort(query(Sheet2!BQ1:BV20))
 
                 ////
 
